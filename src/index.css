@@ -4,3 +4,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* App.jsx dan body sifatida foydalanamiz */
+.App {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    grid-template-columns: 2fr 10fr;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px){
+    .App {
+        grid-template-columns: 1fr;
+        .Sidebar{
+            display: none;
+        }
+    }
+}
