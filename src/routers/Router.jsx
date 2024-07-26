@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import MainDashboard from '../pages/MainDashboard';
+import Test from '../pages/Test';
 
 function Router() {
     return (
         <Routes>
-            <Route path='/' element={<MainDashboard />} />
+            <Route path='/' element={<Test />} />
         </Routes>
     )
 }
