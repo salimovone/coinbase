@@ -1,0 +1,12 @@
+.th {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+  
+    background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
