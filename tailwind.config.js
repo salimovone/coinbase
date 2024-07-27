@@ -22,6 +22,12 @@ module.exports = {
         'secondary': '#00f6ff',
         'white': 'rgba(255, 255, 255, 0.7)',
         'blue': 'rgba(9, 151, 124, 0.1)',
+
+
+        //sardor
+        "background": "#fff9fe",
+        "gradient": "linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)",
+        "col-prim": "#858585",
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
