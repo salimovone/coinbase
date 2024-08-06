@@ -2,7 +2,7 @@ import React from 'react'
 import SearchBar from '../../components/SearchBar'
 import ProfileView from '../../components/ProfileView'
 import Notification from '../../components/Notification'
-import NavbarItem from '../../components/NavbarItems'
+import NavbarItem from '../../components/NavbarItem'
 import { profileImage } from '../../assets'
 
 export default function Test() {
@@ -18,6 +18,8 @@ export default function Test() {
                 <div className='w-80'>
                     <NavbarItem title={'Boshqaruv qismi'} isActive={1} />
                 </div>
+
+                <NavbarItem isActive={1} title={"hello"} />
 
             </div>
         </div>
