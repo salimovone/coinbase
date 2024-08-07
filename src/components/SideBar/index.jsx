@@ -1,25 +1,22 @@
-import React, { useState } from "react";
-import data from "./data";
+import React from "react";
 import NavbarItem from "../NavbarItem";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import data from "../../routers/routes";
+
 
 const SideBar = () => {
-  const [active, setActive] = useState(0);
   const navigate = useNavigate()
+  const location = useLocation()
 
-  const clickItem = (id, path) => {
-    setActive(id)
-    navigate(path)
-  }
   return (
     <div className="w-full h-full border-r pr-4 pt-10">
       {data.map((itm) => (
-        <React.Fragment key={itm.id}>
+        <React.Fragment key={itm.key}>
           <NavbarItem
             icon={itm.icon}
             title={itm.name}
-            isActive={active === itm.id}
-            onClick={() => clickItem(itm.id, itm.path)}
+            isActive={location.pathname === itm.path}
+            onClick={()=>navigate(itm.path)}
           />
         </React.Fragment>
       ))}

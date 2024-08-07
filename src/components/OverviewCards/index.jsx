@@ -24,7 +24,7 @@ const OverviewCards = () => {
   return (
     <div className='mt-6 mb-8'>
         <span className="text-Secondary font-bold pb-3">Overview</span>
-        <div className="cardBox flex justify-between items-center gap-8 mt-3">
+        <div className="cardBox grid justify-between items-center gap-8 mt-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
             {data.map(itm=>(
                 <Card key={itm.id} {...itm} />
             ))}

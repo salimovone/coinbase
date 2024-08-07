@@ -3,7 +3,7 @@ import style from './style.module.css'
 
 const Table = () => {
   return (
-    <div className="w-full border-[2px] py-8 px-16 rounded-xl text-col-prim bg-white">
+    <div className="w-full border-[2px] py-8 px-16 rounded-xl text-col-prim bg-white max-md:w-80 max-md:overflow-y-scroll">
       <p><b>Conversion rate to Nigeria</b></p>
       <table className="w-full text-left mt-5 text-xs *:*:p-2">
 
