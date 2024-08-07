@@ -3,7 +3,7 @@ import styles from "./card.module.css";
 
 const Card = ({ num, title }) => {
   return (
-    <div className="bg-white rounded-2xl border p-8 flex justify-between gap-8 relative">
+    <div className="bg-white rounded-2xl border p-8 flex justify-between gap-8 relative w-full max-sm:max-w-80">
       <div>
         <div className={styles.spinner}>
           <div className={styles.spinner1}>{num}</div>
