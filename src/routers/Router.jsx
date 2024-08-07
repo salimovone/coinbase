@@ -8,7 +8,7 @@ function Router() {
             <Route path='/' element={<MainDashboard />} />
             {/* yangi page yaratish uchun routes.js ga qara */}
             {routes.map(item=>(
-                <Route {...item} />
+                <Route {...item} key={item.key} />
             ))}
         </Routes>
     )
