@@ -4,6 +4,7 @@ import { ImEye } from "react-icons/im";
 import Settings from "../pages/Settings"
 import User from "../pages/User"
 import MainDashboard from '../pages/MainDashboard';
+import Login from "../pages/Login";
 
 
 // brinchi obyektga qarab qoganlarini yaratib ket
@@ -28,6 +29,13 @@ const routes = [
         path: '/settings',
         name: "Settings",
         icon: <AiOutlineSetting />
+    },
+    {
+        key: 3,
+        element: <Login />,
+        path: "/login",
+        name: "Login",
+        invisible: false
     }
 ]
 
