@@ -9,7 +9,6 @@ const MenuButton = ({className}) => {
   const click = () => {
     setOpened(!opened)
     dispatch(setIsOpen(opened))
-    console.log(isOpen, "   hasfdnk");
   }
   return (
     <label onClick={click} className={className}>
