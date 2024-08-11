@@ -30,3 +30,7 @@
     display: block;
   }
 }
+
+.Avatar:hover > div {
+  display: flex;
+}
