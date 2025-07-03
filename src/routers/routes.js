@@ -5,6 +5,7 @@ import Settings from "../pages/Settings"
 import User from "../pages/User"
 import MainDashboard from '../pages/MainDashboard';
 import Login from "../pages/Login";
+import Binlookup from "../pages/Binlookup";
 
 
 // brinchi obyektga qarab qoganlarini yaratib ket
@@ -35,6 +36,13 @@ const routes = [
         element: <Login />,
         path: "/login",
         name: "Login",
+        invisible: false
+    },
+    {
+        key: 4,
+        element: <Binlookup />,
+        path: "/bin",
+        name: "binlookup",
         invisible: false
     }
 ]
